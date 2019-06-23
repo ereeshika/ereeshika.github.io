@@ -1,50 +1,51 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="css/custom.css">
-  <style>
-    /* Custom CSS for footer */
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+    <style>
+      /* Custom CSS for footer */
     </style>
-  <link rel="icon" type="image/png" href="img/fav-icon.png">
-  <title>Ereeshika</title>
-</head>
+    <link rel="icon" type="image/png" href="img/fav-icon.png">
+    <title>Ereeshika</title>
+  </head>
 
-<body>
-
-  <body class="d-flex flex-column h-100">
+  <body>
     <header>
-      <!-- navbar -->
-      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbarCollapse"
-          aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-success ">
+        <a class="navbar-brand text-light" href="#">Ereeshika</a>
+        <button class="bg-light navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
-          <ul class="navbar-nav ml-auto flex-nowrap">
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a href="#about" class="nav-link m-2 menu-item nav-active">About</a>
+              <a href="#about" class="nav-link text-light">About</a>
             </li>
             <li class="nav-item">
-              <a href="#blog" class="nav-link m-2 menu-item">Blog</a>
+              <a href="#blog" class="nav-link text-light">Blog</a>
             </li>
             <li class="nav-item">
-              <a href="#work" class="nav-link m-2 menu-item">Work</a>
+              <a href="#work" class="nav-link text-light">Work</a>
             </li>
             <li class="nav-item">
-              <a href="#volunteering" class="nav-link m-2 menu-item">Volunteering</a>
+              <a href="#volunteer" class="nav-link text-light">Volunteering</a>
             </li>
             <li class="nav-item">
-              <a href="#footer" class="nav-link m-2 menu-item">Contact</a>
+              <a href="#contact" class="nav-link text-light">Contact</a>
             </li>
           </ul>
         </div>
@@ -54,72 +55,134 @@
     <!-- Begin page content -->
     <main role="main" class="flex-shrink-0">
       <div class="container">
-        <!-- START THE FEATURETTES -->
-        <br>
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Hello, <span class="text-muted">I'm Amila Ereeshika</span></h2>
-            <p class="lead text-muted">A Computer Science Graduate from University college Dublin and currently I'm working as the CEO of <a style="color:#474343" href="https://www.haththilawwe.com" target="_blank">Haththilawwe Media (PVT) Ltd.</a> whcih was also founded by me.
-            I'm jack of all trades and master of few. I love to code, design stuff, do photography, travel, volunteer, experiment stuff, and the list goes on 
+        <div id="about">
+          <div class="text-center">
+            <img src="img/1.png" width="160" class="img-thumbnail border border-success mx-auto rounded-circle"
+              alt="introImage">
+          </div>
+          <div class="text-center" style="padding-top: 10px">
+            <h2 class="text-success">I'm Amila Ereeshika</h2>
+            <p>
+              <span class="font-weight-bold font-italic"> Simply a Jack of all trades and a master of few.
+              </span></br>
+              <span class="lead font-weight-normal text-red">Loves to teach, code, travel,
+                volunteer, write and learn things by doing.
+              </span>
             </p>
           </div>
+        </div>
+        <!-- START THE FEATURETTES -->
+        <br>
+        <div class="row featurette" id="work">
           <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto" src="img/1.png" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto" src="img/dev.png" alt="Generic placeholder image">
+          </div>
+          <div class="col-md-7 order-md-2">
+            <h3 class="featurette-heading text-success">What I can do as a Developer</h3>
+            <p class="font-weight-normal">Thanks to my love for experimenting things, I was able to work on
+              several technologies like laravel, wordpress, nodejs, reactjs, redux, firebase, mySQL, postgreSQL, java
+              as a
+              full-stack Developer. Therefore I can develop,
+            </p>
+            <ul>
+              <li>Websites (with or without a backend)</li>
+              <li>Restful APIs</li>
+              <li>Standalone Desktop Applications</li>
+              <li>Technical Documentations</li>
+              <li>Or any other developing task if I were given a fair deadline</li>
+            </ul>
           </div>
         </div>
 
-        <!-- <hr class="featurette-divider"> -->
+        <hr class="featurette-divider">
+        </br>
+        <div class="row featurette" id="blog">
+          <div class="col-md-5 order-md-2">
+            <img class="featurette-image img-fluid mx-auto" src="img/blog.png" alt="Generic placeholder image">
+          </div>
+          <div class="col-md-7 order-md-1">
+            <h3 class="featurette-heading text-success">What I can do as a Blogger</h3>
+            <p class="font-weight-normal">I love to share my knowledge and experience along with positive and
+              constructive messages to the world. Therefore I'm eager to write blogs about,
+            </p>
+            <ul>
+              <li>Good quality products, services and platforms</li>
+              <li>Travel destinations and related experiences</li>
+              <li>Events (specailly tech related)</li>
+            </ul>
+          </div>
+        </div>
+        <hr class="featurette-divider">
+        </br>
+        <div class="row featurette" id="volunteer">
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="img/volunteer.png" alt="Generic placeholder image">
+          </div>
+          <div class="col-md-7 order-md-2">
+            <h3 class="featurette-heading text-success">What I'm doing as a Volunteer</h3>
+            <p class="font-weight-normal"> Helping other living beings to make their lives better is a great privillege
+              one can achieve. Been motivated by that I always make time to help others from my best. To do this I've
+              been involved with some volunteering organizations as well. Few of them are as follows,
+            </p>
+            <ul>
+              <li><a href="https://reps.mozilla.org/u/ereeshika/" target="_blank" style="color:black">Representative
+                  at mozilla</a></li>
+              <li><a href="http://foss.lk/" target="_blank" style="color:black">Member at Free and
+                  Open Source Software Community Sri Lanka</a></li>
+            </ul>
+          </div>
+        </div>
 
         <!-- /END THE FEATURETTES -->
       </div>
     </main>
 
     <!-- Footer  -->
-    <footer class="footer" style="color:#474343" id="footer">
+    <footer class="footer" style="color:#5cb85c" id="contact">
       <div class="container col-lg-12 mx-auto">
         <div class="row text-muted" id="footer">
           <div class="col-lg-12">
             <br>
           </div>
           <div class="col-lg-4" align="center">
-            <a href="https://www.facebook.com/amila.ereeshika" target="_blank" style="color:#ABB2B9">
+            <a href="https://www.facebook.com/ereeshika/" target="_blank" style="color:whitesmoke">
               <span class="fa-stack">
                 <i class="far fa-circle fa-stack-2x"></i>
                 <i class="fab fa-facebook-f fa-stack-1x"></i>
               </span>
             </a>
-            <a href="https://www.messenger.com/t/amila.ereeshika" target="_blank" style="color:#ABB2B9">
+            <a href="https://www.messenger.com/t/amila.ereeshika" target="_blank" style="color:whitesmoke">
               <span class="fa-stack">
                 <i class="far fa-circle fa-stack-2x"></i>
                 <i class="fab fa-facebook-messenger fa-stack-1x"></i>
               </span>
             </a>
-            <a href="https://www.instagram.com/amilaereeshika/" target="_blank" style="color:#ABB2B9">
+            <a href="https://www.instagram.com/amilaereeshika/" target="_blank" style="color:whitesmoke">
               <span class="fa-stack">
                 <i class="far fa-circle fa-stack-2x"></i>
                 <i class="fab fa-instagram fa-stack-1x"></i>
               </span>
             </a>
-            <a href="https://twitter.com/amilaereeshika" target="_blank" style="color:#ABB2B9">
+            <a href="https://twitter.com/amilaereeshika" target="_blank" style="color:whitesmoke">
               <span class="fa-stack">
                 <i class="far fa-circle fa-stack-2x"></i>
                 <i class="fab fa-twitter fa-stack-1x"></i>
               </span>
             </a>
-            <a href="https://www.linkedin.com/in/amila-ereeshika/" target="_blank" style="color:#ABB2B9">
+            <a href="https://www.linkedin.com/in/amila-ereeshika/" target="_blank" style="color:whitesmoke">
               <span class="fa-stack">
                 <i class="far fa-circle fa-stack-2x"></i>
                 <i class="fab fa-linkedin-in fa-stack-1x"></i>
               </span>
             </a>
           </div><!-- /.1social Media-->
-          <div class="col-lg-4" align="center" style="color:#ABB2B9">
+          <div class="col-lg-4" align="center" style="color:whitesmoke">
             <p>Amila Ereeshika 2019</p>
           </div>
-          <div class="col-lg-2" align="center" style="color:#ABB2B9">
+          <div class="col-lg-2" align="center" style="color:whitesmoke">
             <br>
           </div>
-          <div class="col-lg-2" align="center" style="color:#ABB2B9">
+          <div class="col-lg-2" align="center" style="color:whitesmoke">
             <p><i class="far fa-envelope"></i> amila@mozilla.lk &nbsp; </p>
           </div>
           <!-- /. Contact -->
@@ -130,11 +193,14 @@
     <!-- Footer End -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
       crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
       crossorigin="anonymous"></script>
   </body>
 
