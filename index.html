@@ -16,6 +16,8 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet" />
 </head>
 
 <body id="page-top">
@@ -35,13 +37,16 @@
                     <a class="social-icon" href="http://blog.ereeshika.com"><i class="fab fa-blogger"></i></a>
                 </li>
                 <li class="nav-item social-icons" style="padding-top: 10px;">
-                    <a class="social-icon" href="https://www.facebook.com/mr.ereeshika"><i class="fab fa-facebook-f"></i></a>
+                    <a class="social-icon" href="https://www.facebook.com/mr.ereeshika"><i
+                            class="fab fa-facebook-f"></i></a>
                 </li>
                 <li class="nav-item social-icons" style="padding-top: 10px;">
-                    <a class="social-icon" href="https://www.instagram.com/amilaereeshika/"><i class="fab fa-instagram"></i></a>
+                    <a class="social-icon" href="https://www.instagram.com/amilaereeshika/"><i
+                            class="fab fa-instagram"></i></a>
                 </li>
                 <li class="nav-item social-icons" style="padding-top: 10px;">
-                    <a class="social-icon" href="https://www.linkedin.com/in/amila-ereeshika/"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="social-icon" href="https://www.linkedin.com/in/amila-ereeshika/"><i
+                            class="fab fa-linkedin-in"></i></a>
                 </li>
                 <li class="nav-item social-icons" style="padding-top: 10px;">
                     <a class="social-icon" href="https://twitter.com/amilaereeshika"><i class="fab fa-twitter"></i></a>
@@ -67,48 +72,25 @@
                     Follow me on social media and hear my stories on my blog.</p>
             </div>
         </section>
-        <!-- <hr class="m-0" />
-
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Senior Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">December 2011 - March 2013</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Junior Web Designer</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2010 - December 2011</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Design Intern</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-        -->
     </div>
+    <div class="container_win">
+        <h1 id="headline">Countdown to the next phase:</h1>
+        <div id="countdown">
+          <ul>
+            <li><span id="days"></span>Days</li>
+            <li><span id="hours"></span>Hours</li>
+            <li><span id="minutes"></span>Minutes</li>
+            <li><span id="seconds"></span>Seconds</li>
+          </ul>
+        </div>
+        <div class="message">
+          <div id="content">
+            <span class="emoji">😎</span>
+            <span class="emoji">💪</span>
+            <span class="emoji">🧑‍🚀</span>
+          </div>
+        </div>
+      </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
@@ -116,6 +98,45 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+
+    <script>
+        (function () {
+            const second = 1000,
+                minute = second * 60,
+                hour = minute * 60,
+                day = hour * 24;
+
+            let nextphase = "Jul 20, 2021 12:00:00",
+                countDown = new Date(nextphase).getTime(),
+                x = setInterval(function () {
+
+                    let now = new Date().getTime(),
+                        distance = countDown - now;
+
+                    document.getElementById("days").innerText = Math.floor(distance / (day)),
+                        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (
+                            minute)),
+                        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) /
+                            second);
+
+                    //do something later when date is reached
+                    if (distance < 0) {
+                        let headline = document.getElementById("headline"),
+                            countdown = document.getElementById("countdown"),
+                            content = document.getElementById("content");
+
+                        headline.innerText = "It's time for the next phase!";
+                        countdown.style.display = "none";
+                        content.style.display = "block";
+
+                        clearInterval(x);
+                    }
+                    //seconds
+                }, 0)
+        }());
+    </script>
+
 </body>
 
 </html>
