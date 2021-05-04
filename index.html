@@ -109,28 +109,9 @@
             Simply a computer science enthusiast and a traveller with a free
             spirit who loves to enjoy life.
           </p>
-          <a href="dream.html">my link</a>
         </div>
       </section>
     </div>
-    <!-- <div class="container_win">
-      <h1 id="headline">Countdown to the next phase:</h1>
-      <div id="countdown">
-        <ul>
-          <li><span id="days"></span>Days</li>
-          <li><span id="hours"></span>Hours</li>
-          <li><span id="minutes"></span>Minutes</li>
-          <li><span id="seconds"></span>Seconds</li>
-        </ul>
-      </div>
-      <div class="message">
-        <div id="content">
-          <span class="emoji">😎</span>
-          <span class="emoji">💪</span>
-          <span class="emoji">🧑‍🚀</span>
-        </div>
-      </div>
-    </div> -->
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
@@ -138,48 +119,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-
-    <script>
-      (function () {
-        const second = 1000,
-          minute = second * 60,
-          hour = minute * 60,
-          day = hour * 24;
-
-        let nextphase = "Jul 20, 2021 12:00:00",
-          countDown = new Date(nextphase).getTime(),
-          x = setInterval(function () {
-            let now = new Date().getTime(),
-              distance = countDown - now;
-
-            (document.getElementById("days").innerText = Math.floor(
-              distance / day
-            )),
-              (document.getElementById("hours").innerText = Math.floor(
-                (distance % day) / hour
-              )),
-              (document.getElementById("minutes").innerText = Math.floor(
-                (distance % hour) / minute
-              )),
-              (document.getElementById("seconds").innerText = Math.floor(
-                (distance % minute) / second
-              ));
-
-            //do something later when date is reached
-            if (distance < 0) {
-              let headline = document.getElementById("headline"),
-                countdown = document.getElementById("countdown"),
-                content = document.getElementById("content");
-
-              headline.innerText = "It's time for the next phase!";
-              countdown.style.display = "none";
-              content.style.display = "block";
-
-              clearInterval(x);
-            }
-            //seconds
-          }, 0);
-      })();
-    </script>
   </body>
 </html>
